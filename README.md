@@ -36,3 +36,23 @@ The project is designed to be **completed within 6-8 hours**, depending on the l
 - Error handling for invalid inputs.
 - Ensures valid deposit and withdrawal amounts to prevent incorrect transactions.
 - Lightweight and efficient C implementation.
+
+## 3. Installation & Compilation
+
+### 3.1 Prerequisites
+
+Ensure you have a C compiler installed.
+
+### 3.2 Compile the program
+
+```c
+gcc main.c -o simple_bank
+```
+
+### 3.3 Run the program
+
+```c
+./simple_bank
+```
+
+## 4. Usage
