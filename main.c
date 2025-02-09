@@ -1,3 +1,29 @@
+/*
+ * =====================================================
+ * File: main.c
+ * Author: Alex Tian
+ * Date: August, 2020
+ * Description:
+ *     This program simulates a simple banking system where users 
+ *     can check their balance, deposit money, withdraw money, 
+ *     and exit the system.
+ *
+ * Features:
+ *     - Initial balance starts at $1000.00
+ *     - Users can select from four operations:
+ *         1. Check balance
+ *         2. Deposit money
+ *         3. Withdraw money
+ *         4. Exit the system
+ *     - The system handles invalid inputs gracefully.
+ *     - Ensures deposit and withdrawal amounts are valid.
+ *
+ * Usage:
+ *     - Compile with: gcc main.c -o simple_bank
+ *     - Run the program: ./simple_bank
+ * =====================================================
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 
