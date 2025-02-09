@@ -211,11 +211,26 @@ Please select an operation:
 Enter your choice (1-4): 
 ```
 
-## 5. License
+## 5. Implementation
+
+This section provides an overview of the implementation details and the logical structure of the banking system.
+
+### 5.1 Flowchart
+
+![Flowchart](flowchart.png)
+
+### 5.2 Key Implementation Details
+
+- Looping Mechanism: A while loop ensures the program runs continuously until the user chooses to exit.
+- User Input Handling: Uses scanf for input collection, with additional handling to clear the buffer (getchar() to prevent input errors).
+- Error Handling: Ensures inputs are within the valid range, prevents negative deposits, and checks for sufficient funds before allowing withdrawals.
+- Exit Mechanism: The program terminates when the user selects option 4, displaying a farewell message.
+
+## 6. License
 
 This project is licensed under the **MIT License** – feel free to use, modify, and distribute it.
 
-## 6. Contact
+## 7. Contact
 
 If you have any questions, suggestions, or would like to discuss improvements to this project, feel free to reach out:
 
