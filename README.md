@@ -56,3 +56,169 @@ gcc main.c -o simple_bank
 ```
 
 ## 4. Usage
+
+### 4.1 Banking Operations
+
+Once you run the program, you will see a menu like this:
+
+```c
+====================================
+      Welcome to the Simple Bank      
+====================================
+Your initial balance is: 1000.00 USD
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 
+```
+
+Users can enter a number (1-4) to perform the corresponding banking operation.
+
+### 4.2 Deposit the Valid Amount
+
+If the user selects Option 2 (Deposit) and enters a valid amount, the deposit will be processed successfully.
+
+```c
+====================================
+      Welcome to the Simple Bank      
+====================================
+Your initial balance is: 1000.00 USD
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 2
+
+Enter deposit amount: 50
+Deposit successful!
+Your new balance is: 1050.00 USD
+```
+
+### 4.3 Deposit the Invalid Amount
+
+If the user tries to deposit a negative amount or zero, an error message is displayed.
+
+```c
+====================================
+      Welcome to the Simple Bank      
+====================================
+Your initial balance is: 1000.00 USD
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 2
+
+Enter deposit amount: -100
+Deposit amount must be greater than 0!
+```
+
+### 4.4 Withdraw the Valid Amount
+
+If the user selects Option 3 (Withdraw) and enters a valid amount that does not exceed the balance, the withdrawal will be processed.
+
+```c
+====================================
+      Welcome to the Simple Bank      
+====================================
+Your initial balance is: 1000.00 USD
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 3
+
+Enter withdrawal amount: 100
+Withdrawal successful!
+Your new balance is: 900.00 USD
+```
+
+### 4.5 Attempting to Withdraw More Than the Available Balance
+
+- If the user tries to withdraw more than their balance, the system will reject the transaction.
+- After the failed withdrawal, the user can check their balance:
+
+```c
+====================================
+      Welcome to the Simple Bank      
+====================================
+Your initial balance is: 1000.00 USD
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 3
+
+Enter withdrawal amount: 2000
+Insufficient balance. Withdrawal failed.
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 1
+
+Your current balance is: 1000.00 USD
+```
+
+### 4.6 Handling Invalid Banking Options
+
+- If the user enters a number outside the range of (1-4), they will receive an error message.
+- If the user enters a non-numeric value, such as a letter, the system will also reject it.
+- The program will then re-prompt the user to enter a valid option.
+
+```c
+====================================
+      Welcome to the Simple Bank      
+====================================
+Your initial balance is: 1000.00 USD
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 6
+
+Invalid choice. Please enter a number between 1 and 4.
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): a
+
+Invalid input. Please enter a number between 1 and 4.
+
+Please select an operation:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Enter your choice (1-4): 
+```
+
+## 5. License
+
+This project is licensed under the **MIT License** – feel free to use, modify, and distribute it.
+
+## 6. Contact
+
+If you have any questions, suggestions, or would like to discuss improvements to this project, feel free to reach out:
+
+🌐 Website: [Alex Tian](https://alextianyf.github.io/CV/)
+
+I appreciate your feedback and contributions! 🚀
